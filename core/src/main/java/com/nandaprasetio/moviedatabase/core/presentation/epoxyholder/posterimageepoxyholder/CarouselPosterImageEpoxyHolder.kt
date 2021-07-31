@@ -1,0 +1,3 @@
+package com.nandaprasetio.moviedatabase.core.presentation.epoxyholder.posterimageepoxyholder
+
+class CarouselPosterImageEpoxyHolder: PosterImageEpoxyHolder()

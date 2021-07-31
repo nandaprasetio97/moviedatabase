@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_graph_popular_movie"
+        android:icon="@drawable/ic_baseline_stars_24"
+        android:title="@string/title_popular_movie" />
+
+    <item
+        android:id="@+id/nav_graph_movie_genre"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="@string/title_discover_movie" />
+
+    <item
+        android:id="@+id/nav_graph_top_rated_movie"
+        android:icon="@drawable/ic_baseline_star_24"
+        android:title="@string/title_top_rated_movie" />
+
+    <item
+        android:id="@+id/nav_graph_upcoming_movie"
+        android:icon="@drawable/ic_baseline_access_time_filled_24"
+        android:title="@string/title_upcoming_movie" />
+</menu>

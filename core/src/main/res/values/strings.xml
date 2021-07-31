@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="something_failed_notification">Something Failed</string>
+    <string name="something_failed_notification_detail">Maybe there is failed that is not discovered.</string>
+    <string name="no_connection_internet_notification">No Internet Connection</string>
+    <string name="no_connection_internet_notification_detail">Please check if device is connected with internet.</string>
+    <string name="data_is_null">Data is Null</string>
+    <string name="data_is_null_detail">For now the data is null.</string>
+    <string name="retry">Retry</string>
+</resources>

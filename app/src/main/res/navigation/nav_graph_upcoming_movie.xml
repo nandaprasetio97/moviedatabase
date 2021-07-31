@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_upcoming_movie"
+    app:startDestination="@+id/fragment_upcoming_movie_paging_recycler_view">
+
+    <fragment
+        android:id="@+id/fragment_upcoming_movie_paging_recycler_view"
+        android:name="com.nandaprasetio.moviedatabase.presentation.fragment.UpcomingMoviePagingRecyclerViewFragment"
+        android:label="UpcomingMoviePagingRecyclerViewFragment" />
+
+</navigation>

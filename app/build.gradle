@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'dagger.hilt.android.plugin'
+}
+
+apply from: '../dependencies.gradle'
+apply from: '../shared_dependencies.gradle'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    defaultConfig {
+        applicationId "com.nandaprasetio.moviedatabase"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation project(":core")
+    implementation libraries.kotlinStdlib
+    implementation libraries.coreKtx
+    implementation libraries.appCompat
+    implementation libraries.material
+    implementation libraries.constraintLayout
+    implementation libraries.kotlinXCoroutinesCore
+    implementation libraries.kotlinXCoroutinesAndroid
+    implementation libraries.fragmentKtx
+    implementation libraries.navigationFragmentKtx
+    implementation libraries.navigationUiKtx
+    implementation libraries.swipeRefreshLayout
+
+    testImplementation libraries.junit
+    androidTestImplementation libraries.junitExt
+    androidTestImplementation libraries.espressoCore
+}

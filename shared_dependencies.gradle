@@ -1,0 +1,33 @@
+apply from: "../dependencies.gradle"
+
+kapt {
+    correctErrorTypes = true
+}
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // Retrofit
+    implementation libraries.retrofit
+    implementation libraries.retrofitConverterGson
+
+    // Hilt 2
+    implementation libraries.hiltAndroid
+    kapt libraries.hiltAndroidKapt
+
+    // Epoxy
+    implementation libraries.epoxy
+    implementation libraries.epoxyPaging3
+    kapt libraries.epoxyKapt
+
+    // Circle Image View
+    implementation libraries.circleImageView
+
+    // Room
+    implementation libraries.room
+    kapt libraries.roomProcessor
+}

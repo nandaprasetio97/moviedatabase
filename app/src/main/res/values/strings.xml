@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Movie Database</string>
+    <string name="title_popular_movie">Popular Movie</string>
+    <string name="title_movie_genre">Movie Genre</string>
+    <string name="title_top_rated_movie">Top Rated Movie</string>
+    <string name="title_upcoming_movie">Upcoming Movie</string>
+    <string name="title_discover_movie">Discover Movie</string>
+    <string name="title_movie_detail">Movie Detail</string>
+    <string name="title_search_movie">Search Movie</string>
+</resources>
