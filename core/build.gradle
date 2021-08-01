@@ -64,6 +64,8 @@ dependencies {
     testImplementation libraries.junit
     testImplementation libraries.archCoreTestingVersion
     testImplementation libraries.kotlinXCoroutinesTest
+    testImplementation libraries.mockitoKotlin
+
     androidTestImplementation libraries.junitExt
     androidTestImplementation libraries.espressoCore
 }
