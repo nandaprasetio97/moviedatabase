@@ -13,11 +13,11 @@ import com.nandaprasetio.moviedatabase.presentation.misc.bottomnavcomponent.Bott
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ObsoleteCoroutinesApi
 
+@ObsoleteCoroutinesApi
 @AndroidEntryPoint
 class MainActivity: BaseActivity<ActivityMainBinding>() {
     private var bottomNavManager: BottomNavManager? = null
 
-    @ObsoleteCoroutinesApi
     override fun onCreate(savedInstanceState: Bundle?) {
         this.setTheme(R.style.Theme_MovieDatabase)
         super.onCreate(savedInstanceState)
